@@ -87,10 +87,11 @@ Themed on [Tokyo Night Storm](https://github.com/folke/tokyonight.nvim). Require
 | `bash` 4+ | Script runtime | pre-installed on macOS/Linux |
 | `jq` | Parse Claude Code JSON input | `brew install jq` |
 | `bun` | Run ccusage | [bun.sh](https://bun.sh) |
-| `ccusage` | Monthly cost data | auto-fetched via `bunx ccusage` |
 | `git` | Branch + status | pre-installed |
 
 **Optional:** `gtimeout` (macOS: `brew install coreutils`) or `timeout` (Linux built-in) for ccusage fetch timeout.
+
+> **Monthly cost display:** If `bun` is installed, the script runs `bunx ccusage monthly` which automatically downloads and executes [ccusage](https://github.com/ryoppippi/ccusage) on demand — no separate install needed. If `bun` is not installed, the `mo` field shows `N/A` and everything else works normally.
 
 ---
 
